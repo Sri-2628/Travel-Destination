@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="images/favcon1.png">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.0.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style1.css" />
+    <title>Travel_DESTINATION</title>
+</head>
+
+<body>
+    <nav>
+        <div class="nav__logo"><a href="#"><span class="one">Travel</span><span class="two"><sup>
+                        DESTINATION</sup></span></a></div>
+        <div class="toggle_btn">
+            <i class="ri-menu-line"></i>
+        </div>
+        <ul class="nav__links">
+            <li class="link"><a href="#home">Home</a></li>
+            <li class="link"><a href="#services">Places</a></li>
+            <li class="link"><a href="#offers">Offers</a></li>
+            <li class="link"><a href="#about">About</a></li>
+            <li class="link"><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <header>
+        <div class="section__container" id="home">
+            <div class="header__content">
+                <h2>Welcome to our website</h2>
+                <p>
+                    Every journey is a chance to discover something new about yourself and the world. Start your journey
+                    today because the world is meant to be explored.
+                </p>
+                <a href="#services" class="explore">Explore</a>
+            </div>
+        </div>
+    </header>
+
+    <section class="journey__container" id="services">
+        <div class="section__container">
+            <h2 class="section__title">Start Your Journey</h2>
+            <p class="section__subtitle">Best places to visit in summer</p>
+            <div class="journey__grid">
+                <div class="country__card">
+                    <img src="images/country-1.jpg" alt="country" />
+                    <div class="country__name">
+                        <i class="ri-map-pin-2-fill"></i>
+                        <span>Santorini, Greece</span>
+                    </div>
+                </div>
+                <div class="country__card">
+                    <img src="images/country-2.jpg" alt="country" />
+                    <div class="country__name">
+                        <i class="ri-map-pin-2-fill"></i>
+                        <span>Vernazza, Italy</span>
+                    </div>
+                </div>
+                <div class="country__card">
+                    <img src="images/country-3.jpg" alt="country" />
+                    <div class="country__name">
+                        <i class="ri-map-pin-2-fill"></i>
+                        <span>San Francisco</span>
+                    </div>
+                </div>
+                <div class="country__card">
+                    <img src="images/country-4.jpg" alt="country" />
+                    <div class="country__name">
+                        <i class="ri-map-pin-2-fill"></i>
+                        <span>navagio, Greece</span>
+                    </div>
+                </div>
+                <div class="country__card">
+                    <img src="images/country-5.jpg" alt="country" />
+                    <div class="country__name">
+                        <i class="ri-map-pin-2-fill"></i>
+                        <span>Ao Nang, Thailand</span>
+                    </div>
+                </div>
+                <div class="country__card">
+                    <img src="images/country-6.jpg" alt="country" />
+                    <div class="country__name">
+                        <i class="ri-map-pin-2-fill"></i>
+                        <span>Phi Phi Island, Thailand</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="banner__container" id="offers">
+        <div class="section__container">
+            <div class="banner__content">
+                <h2>Discount 10-30% Off</h2>
+                <p>
+                    Travel the world on a budget with our unbeatable discounted travel
+                    deals. Whether you're looking for a last-minute escape or planning
+                    ahead, we've got you covered with incredible discounts on flights,
+                    hotels, and packages. Don't wait, book now and experience the
+                    adventure of a lifetime without breaking the bank.
+                </p>
+                <button>See Tours</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="display__container" id="about">
+        <div class="section__container">
+            <h2 class="section__title">About</h2>
+            <p class="section__subtitle">
+                The gladdest moment in human life, is a departure into unknown lands.
+            </p>
+            <div class="display__grid">
+                <div class="display__card grid-1">
+                    <img src="images/grid1.jpg" alt="grid" />
+                </div>
+                <div class="display__card">
+                    <i class="ri-earth-line"></i>
+                    <h4>Passionate Travel</h4>
+                    <p>Fuel your passion for adventure and discover new horizons</p>
+                </div>
+                <div class="display__card">
+                    <img src="images/grid4.jpg" alt="grid" />
+                </div>
+                <div class="display__card">
+                    <img src="images/grid5.jpg" alt="grid" />
+                </div>
+                <div class="display__card">
+                    <i class="ri-road-map-line"></i>
+                    <h4>Beautiful Places</h4>
+                    <p>Uncover the world's most breathtakingly beautiful places</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="section__container" id="contact">
+            <h4><span class="one">Travel</span><span class="two"><sup> DESTINATION</sup></span></h4>
+            <div class="social__icons">
+                <span><i class="ri-facebook-fill" id="fb"></i></span>
+                <span><i class="ri-twitter-fill" id="twi"></i></span>
+                <span><i class="ri-instagram-line" id="insta"></i></span>
+                <span><i class="ri-linkedin-fill" id="ln"></i></span>
+            </div>
+            <p>
+                Life is short; the world is vast. Seize the moment and travel.
+            </p>
+        </div>
+    </footer>
+
+     <script>
+        const toggleBtn = document.querySelector('.toggle_btn');
+        const navLinks = document.querySelector('.nav__links');
+    
+        toggleBtn.onclick = function () {
+            navLinks.classList.toggle('open');
+        };
+    
+        // Close the navigation when a link is clicked
+        document.querySelectorAll('.link a').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('open');
+            });
+        });
+    </script>
+
+    <!-- <script>
+        const toggleBtn = document.querySelector('.toggle_btn');
+        const navLinks = document.querySelector('.nav__links');
+
+        toggleBtn.onclick = function () {
+            navLinks.classList.toggle('open');
+        };
+
+        // Close the navigation when a link is clicked
+        document.querySelectorAll('.nav__links li').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('open');
+            });
+        });
+    </script> -->
+
+
+</body>
+
+</html>
